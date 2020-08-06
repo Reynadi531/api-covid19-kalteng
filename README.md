@@ -15,6 +15,9 @@ mencampur coordinat dan data penyebaran. Oleh itu saya membuat API yang memodifi
 >[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2FReynadi531%2Fapi-covid19-kalteng) atau
 >[JSON API](https://api-covid19-kalteng.vercel.app/api/kabupaten)
 
+## Bugs:
+> Masih ada bug data yang menjadi double entah kesalahan server maupun coding
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
