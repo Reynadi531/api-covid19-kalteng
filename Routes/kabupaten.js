@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const axios = require('axios');
 
+const bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
 let data = [];
 router.get('/kabupaten', async(req, res) => {
     const response = await axios.get('https://corona.kalteng.go.id/data_geojson');
@@ -14,7 +15,14 @@ router.get('/kabupaten', async(req, res) => {
         let tipe = response.data.features[i].properties.tipe;
         let lastUpdate = response.data.features[i].properties.update;
         let dirawat = terkonfirmasi-sembuh-meninggal;
+        let hari_date = lastUpdate.split(' ')[1];
+        let bulan_date = bulan.indexOf(lastUpdate.split(' ')[2]);
+        let tahun_date = lastUpdate.split(' ')[3];
+        let jam_date = lastUpdate.split(' ')[4].split(':')[0];
+        let menit_date = lastUpdate.split(' ')[4].split(':')[1];
+        let d = new Date(tahun_date, bulan_date, hari_date, jam_date, menit_date);
         data.push({
+            "id": i+1,
             "nama": nama,
             "tipe": tipe,
             "odp": odp,
@@ -23,7 +31,8 @@ router.get('/kabupaten', async(req, res) => {
             "dirawat": dirawat,
             "sembuh": sembuh,
             "meninggal": meninggal,
-            "lastUpdate": lastUpdate
+            "update": lastUpdate,
+            "lastUpdate": d
         });
     }
     data.length = 14;
