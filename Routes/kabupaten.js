@@ -26,6 +26,7 @@ router.get('/kabupaten', async(req, res) => {
             "lastUpdate": lastUpdate
         });
     }
+    data.length = 14;
     res.json(data);
 });
 
