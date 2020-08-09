@@ -9,7 +9,8 @@ mencampur coordinat dan data penyebaran. Oleh itu saya membuat API yang memodifi
 
 ## Endpoint:
   * /api/kabupaten
->Untuk saat hanya ada satu endpoint atau routes. Kedepannya semgoa akan ada endpoint dan data yang lebih banyak
+  * /api
+>Untuk saat hanya ada beberapa endpoint. Kedepannya akan ada penambahan data dan endpoint.
 
 ## Deployment:
 >[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2FReynadi531%2Fapi-covid19-kalteng) atau
