@@ -17,7 +17,7 @@ mencampur coordinat dan data penyebaran. Oleh itu saya membuat API yang memodifi
 >[JSON API](https://api-covid19-kalteng.vercel.app/)
 
 ## Problems:
-> API masih lambat, kadang bisa error dan masih belum stabil
+> Kadang bisa error dan masih belum stabil
 
 ## License
 
