@@ -14,10 +14,10 @@ mencampur coordinat dan data penyebaran. Oleh itu saya membuat API yang memodifi
 
 ## Deployment:
 >[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2FReynadi531%2Fapi-covid19-kalteng) atau
->[JSON API](https://api-covid19-kalteng.vercel.app/api/kabupaten)
+>[JSON API](https://api-covid19-kalteng.vercel.app/)
 
 ## Problems:
-> API masih lambat
+> Kadang bisa error dan masih belum stabil
 
 ## License
 
