@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const cors = require('cors');
 
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+
 const app = express();
 app.use(express.json());
 app.use(cors());
